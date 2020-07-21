@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #f7f8fc;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open sans',sans-serif;
+
+}
+.container {
+    width: 1000px;
+    display: flex;
+    padding: 30px;
+    border: 20px solid #fafcfc;
+    box-shadow: 0 4px 5px #c0bac2;
+    background-color: #fff;
+   
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+    padding: 20px;
+    flex: 1;
+}
+a {
+    text-decoration: none;
+}
+.btn {
+    width: 100%;
+    padding: 5px 10px;
+    margin: 20px 0;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #252f44;
+    padding: 10px;
+    border: 2px solid #252f44;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.btn-ghost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color:#252f44;
+    border-color:  #dff0f5;
+   
+  
+}
+.btn-ghost img{
+    width: 20px;
+    margin: 0 5px;
+}
+.form-control {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0;
+}
+input:not([type='checkbox']){
+    font-size: 14px;
+    margin: 5px 0px;
+    padding: 10px;
+    font-family: inherit;
+    border-radius: 3px;
+    border: 2px solid #dff0f5
+}
+.checkbox-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.checkbox-container a {
+    margin-left: auto;
+}
+.checkbox-container label {
+   
+    font-weight: normal;
+    color: #9fa5b5;
+}
+.features {
+    flex: 1.5;
+    padding: 40px;
+
+}
+.feature {
+    position: relative;
+    padding-left: 30px;
+    margin: 40px 0;
+}
+.feature i {
+    color: #2762eb;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+.feature h3 {
+    margin: 0;
+}
+.feature p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 5px 0;
+}
+
+@media(max-width:768px){
+    .container {
+        flex-direction: column;
+    }
+}
